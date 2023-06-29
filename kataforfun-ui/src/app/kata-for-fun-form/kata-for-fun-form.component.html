@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Kata For Fun</h2>
+  <form [formGroup]="formGroup" (ngSubmit)="submitNumber()">
+    <div class="form-group">
+      <label for="numberInput">Number to convert</label>
+      <input
+        type="number"
+        id="numberInput"
+        class="form-control"
+        formControlName="number"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Convert</button>
+  </form>
+</div>
